@@ -1,6 +1,7 @@
 package lesson1;
 
 public class StartHere {
+	byte variableByteType = 11;
 	public static void main(String[] args) {
 		//2. Создать переменные всех пройденных типов данных и инициализировать их значения.
 		byte variableByteType = 13;
@@ -11,8 +12,6 @@ public class StartHere {
 		double variableDoubleType = 13.14;
 		char variableCharType = 'Z';
 		boolean isSumTrue = false;
-
-
 
 		StartHere sh = new StartHere();
 		variableFloatType = sh.hardFun(1, 2, 3, 4);
@@ -30,6 +29,9 @@ public class StartHere {
 	//3. Написать метод вычисляющий выражение a * (b + (c / d)) и возвращающий результат,
 	//где a, b, c, d – аргументы этого метода, имеющие тип float.
 	public float hardFun(float a, float b, float c, float d) {
+		byte variableByteType = 23;
+		System.out.println(variableByteType);
+		System.out.println(this.variableByteType);
 		return a * (b + (c / d));
 	}
 
