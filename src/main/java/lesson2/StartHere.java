@@ -27,6 +27,7 @@ public class StartHere {
 		//5.
 		System.out.println("Number 5.");
 		minElem();
+		maxElem();
 
 		//6.
 		System.out.println("Number 6.");
@@ -82,12 +83,9 @@ public class StartHere {
 	public static void diagonal() {
 		int[][] my2Arr = new int[5][5];
 		for (int i = 0; i < my2Arr[0].length; i++) {
-			for (int j = 0; j < my2Arr[0].length; j++) {
-				if (i == j) {
-					my2Arr[i][j] = 1;
-				}
-			}
+			my2Arr[i][i] = 1;
 		}
+		System.out.println();
 	}
 
 	//5. ** Задать одномерный массив и найти в нем минимальный и максимальный элементы (без
@@ -100,7 +98,18 @@ public class StartHere {
 				min = i;
 			}
 		}
-		System.out.println(min);
+		System.out.println("Минимальный элемент - " + min);
+	}
+
+	public static void maxElem() {
+		int[] myArr = {53, 22, 24, 83, 92, 62, 1, 5, 3, 2, 11, 4};
+		int max = myArr[0];
+		for (int i : myArr) {
+			if (max < i) {
+				max = i;
+			}
+		}
+		System.out.println("Максимальный элемент - " + max);
 	}
 
 	//6. ** Написать метод, в который передается не пустой одномерный целочисленный массив,
@@ -133,18 +142,12 @@ public class StartHere {
 					myArr[j + 1] = myArr[0];
 					myArr[0] = temp;
 				}
-				System.out.print(Arrays.toString(myArr));
-				System.out.print("\r");
-				Thread.sleep(500);
 			} else if (step < 0) {
 				for (int j = myArr.length; j > 0; j--) {
 					temp = myArr[j - 1];
 					myArr[j - 1] = myArr[myArr.length - 1];
 					myArr[myArr.length - 1] = temp;
 				}
-				System.out.print(Arrays.toString(myArr));
-				System.out.print("\r");
-				Thread.sleep(500);
 			}
 		}
 	}
