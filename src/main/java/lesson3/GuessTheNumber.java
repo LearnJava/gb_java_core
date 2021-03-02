@@ -7,6 +7,10 @@ import java.io.InputStreamReader;
 public class GuessTheNumber {
 	BufferedReader reader;
 
+	public static void main(String[] args) {
+		new GuessTheNumber().run();
+	}
+
 	public void run() {
 		int yesOrNo;
 
