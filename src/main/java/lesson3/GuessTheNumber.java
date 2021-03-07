@@ -7,6 +7,32 @@ import java.io.InputStreamReader;
 public class GuessTheNumber {
 	BufferedReader reader;
 
+
+	public int method2(int myVarM2) {
+
+		int newIntM2 = myVarM2 + 1;
+		return newIntM2;
+	}
+
+	public int method3(int myVarM3) {
+
+		int newIntM3 = method2(myVarM3);
+		return newIntM3;
+	}
+
+	public int method4(int myVarM4) {
+
+		int newIntM4 = method2(myVarM4);
+		return newIntM4;
+	}
+
+
+
+
+
+
+
+
 	public static void main(String[] args) {
 		new GuessTheNumber().run();
 	}
