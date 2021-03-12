@@ -12,6 +12,7 @@ public class StartHere {
 		persArray[3] = new Person("Alexey Alexeev", "Driver", "a@mailbox.com", "1234565",20000, 34);
 		persArray[4] = new Person("Степан Воронин", "Translator", "sv@mailbox.com", "98765433456",500000, 39);
 
-		Arrays.stream(persArray).filter(person -> person.getAge() > 40).collect(Collectors.toList()).forEach(System.out::println);
+		System.out.println();
+//		Arrays.stream(persArray).filter(person -> person.getAge() > 40).collect(Collectors.toList()).forEach(System.out::println);
 	}
 }
