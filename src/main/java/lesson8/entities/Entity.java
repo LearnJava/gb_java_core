@@ -2,10 +2,8 @@ package lesson8.entities;
 
 public interface Entity {
     String run();
-
     String jump();
 
-    //    boolean overcomeAnObstacle(Obstacle obstacle);
     default boolean overcomeAnObstacle(Obstacle obstacle, int maxJump, int maxRun) {
         if (obstacle instanceof Wall) {
             if (obstacle.getBarrierSize() <= maxJump) {
