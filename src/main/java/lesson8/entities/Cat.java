@@ -3,7 +3,6 @@ package lesson8.entities;
 import lesson8.exceptions.SubZeroException;
 
 public class Cat implements Entity {
-
     private final int maxRun;
     private final int maxJump;
     private final String name;
@@ -26,7 +25,6 @@ public class Cat implements Entity {
     public String jump() {
         return name + " сказал -> Я прагаю с помощью своих пушистых лапок.";
     }
-
 
     public int getMaxRun() {
         return maxRun;
